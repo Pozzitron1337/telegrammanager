@@ -1,0 +1,44 @@
+/*WebStorage webStorage = (WebStorage) new Augmenter().augment(webDriver);
+        LocalStorage localStorage=webStorage.getLocalStorage();
+        localStorage.clear();
+        localStorage.setItem("dc2_auth_key","\"a67f004f4d3e3b853edf163473fec983b1502736898e45524f970b2b02941891b436c6b63999acb48eeecefe48be476faabe143ac9d85ecaac686ae21938e165fb37c09c74a477f83a843e4b38516872bb38e2c749556b66d238eae5edb28119127643a061f17c9418cf5ef0f12b47b530ea3b7ccc5f199b2a022308fa6000f330cee2f68b3781cf66d10489d0a36982feb8957a679e0c12bbfd82d4025d2009098449ac6dbdc3d8ce3a2363f41cada78e4f265235ce46a959dd1d974b8349bf3f5d9ee88308d317468f64f8226030ddbe87dd9f8882bf1aa1ea7c87c0d1c04b95be5bf27ffb3d07d84ff67fd18986c22c65ec48cbbf51ddcca2d09c750c89fa\"");
+        localStorage.setItem("tgme_sync","{\"canRedirect\":true,\"ts\":1566149869}");
+        localStorage.setItem("user_auth","{\"dcID\":2,\"id\":173486170}");
+        webDriver.navigate().refresh();*/
+
+asd
+
+((//ul[contains(@class,'nav')])[1]//a)[1]
+
+
+/* webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        try{
+        WebElement search=webDriver.findElement(By.xpath("//input[@placeholder='Search']"));
+        search.sendKeys(whom);
+        search.sendKeys(Keys.ENTER);
+        Thread.sleep(4000);
+        search.sendKeys(Keys.ENTER);
+        wait.until(visibilityOfElementLocated(By.xpath("//div[@class='composer_rich_textarea']"))).sendKeys(message);
+        wait.until(visibilityOfElementLocated(By.xpath("//span[@data-content='Send']"))).click();
+        }catch (Exception e){
+            System.out.println("ERRROR");
+        }*/
+
+
+
+/*if(au.cookiesIsEmpty()){
+            au.goToTelegramWeb();
+            System.out.println("Enter the phone number:");
+            au.setPhoneNumber(app.getInput());
+            au.enteringThePhoneNumber();
+            System.out.println("Enter the phone code:");
+            au.setPhoneCode(app.getInput());
+            au.enteringThePhoneCode();
+            au.cacheTheCookieOfTelegramAccount();
+            au.initializeSettingOfLastSession();
+        }
+        else{
+            au.goToTelegramWeb();
+            au.getTheSettings();
+            au.setTheCookieAndRefresh();
+        }*/

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+    <bean id="geckoDriverProperty" class="java.lang.System" factory-method="setProperty" scope="singleton">
+        <constructor-arg index="0" value="webdriver.gecko.driver"/>
+        <constructor-arg index="1" value="resources\drivers\geckodriver.exe"/>
+    </bean>
+
+    <bean id="webDriverWait" class="org.openqa.selenium.support.ui.WebDriverWait">
+        <constructor-arg index="0" ref="firefoxDriver"/>
+        <constructor-arg index="1" value="15"/>
+    </bean>
+
+    <bean id="firefoxDriver" class="org.openqa.selenium.firefox.FirefoxDriver" scope="singleton" lazy-init="true" depends-on="geckoDriverProperty" >
+        <constructor-arg ref="firefoxCapabilities"/>
+    </bean>
+
+    <bean id="firefoxCapabilities" class="TelegramEmulator.TelegramWebEmulator.Capabilities.FirefoxDesiredCapabilities" factory-method="firefoxCapabilities"/>
+
+</beans>
